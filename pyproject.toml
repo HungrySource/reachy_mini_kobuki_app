@@ -27,6 +27,9 @@ dependencies = [
     "reachy_mini_dances_library",
     "reachy_mini_toolbox",
     "reachy_mini>=1.0.0.rc4",
+
+    #WebSocket
+    "websockets",
 ]
 
 [project.optional-dependencies]
@@ -54,6 +57,7 @@ dev = [
 
 [project.scripts]
 reachy-mini-conversation-app = "reachy_mini_conversation_app.main:main"
+kobuki-manager = "reachy_mini_conversation_app.kobuki_manager:cli_main"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
